@@ -1,5 +1,5 @@
-
-
+const item = document.querySelector('.item')
+const body = document.querySelector('body')
 for (let i = 0; i < item.length; i++) {
     item[i].style.background = item[i].getAttribute('data-bg')
 
