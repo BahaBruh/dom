@@ -1,62 +1,4 @@
-const item = document.querySelectorAll('.item')
-const body = document.querySelector('body')
-const img = document.querySelector('img') 
-// item.addEventListener('click', function () {
-//     // item.style.background = 'red'
 
-
-//     if (item.style.background == 'red') {
-//         item.style.background = 'white'
-//     }else{
-
-//     item.style.background = 'red'
-
-//     }
-// })
-
-
-
-
-// item.addEventListener('mouseover', function () {
-
-
-//     body.style.background = 'orange'
-    
-// })
-// item.addEventListener('mouseout', function () {
-
-
-//     body.style.background = 'white'
-    
-// })
-
-
-
-
-
-// item.addEventListener('click', function () {
-//     img.setAttribute("src", 'drag.jpeg')
-//     img.style.height = '500px'
-// })
-
-
-// let lem = true
-// item.addEventListener('click', function () {
-//     if (lem) {
-//         img.setAttribute("src", 'drag.jpeg')
-//     img.style.height = '500px'
-//     lem = false
-//     } else {
-//         img.style.height = '0'
-//         lem = true
-//     }
-// })
-
-
-
-
-// console.log(item.removeAttribute(' class'));
-// console.log(item.getAttribute('class'));
 
 for (let i = 0; i < item.length; i++) {
     item[i].style.background = item[i].getAttribute('data-bg')
@@ -102,7 +44,7 @@ function randGradient() {
     let b = Math.floor(Math.random() * 256)
     let a = 1
     let p = Math.floor(Math.random() * 101)
-    return `rgba(${r}, ${g}, ${b}, ${a}) ${p}%`   
+    return `  linear-gradient(deg(), rgba(${r}, ${g}, ${b}, ${a}) ${p}%, rgba(${r}, ${g}, ${b}, ${a}) ${p}%)`   
 }
 
 
@@ -112,7 +54,7 @@ for (let i = 0; i < card_2.length; i++) {
     
     card_2[i].addEventListener('click', function () {
         
-        card_2[i].style.background = (  'linear-gradient' + (deg(), + randGradient(), + randGradient()))  
+        card_2[i].style.background = randGradient()
     })
-        console.log(card_2[i]);
+        
 }
